@@ -27,14 +27,21 @@
 	import WavesLayout from '$lib/layouts/waves-layout.svelte';
 
 	export let posts;
+		
 </script>
+
+
 
 <WavesLayout>
 	<div class="container">
 		<Hero />
-		<About />
-		<RecentPosts {posts} />
 		<Projects />
+		<RecentPosts {posts} />
+		<About />
 		<Experience />
 	</div>
+	
+	
 </WavesLayout>
+
+

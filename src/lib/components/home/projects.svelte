@@ -9,27 +9,29 @@
 	import Blobs from '../layout/blobs.svelte';
 	import Image from '../base/image.svelte';
 	import Tag from '../base/tag.svelte';
+		
 </script>
+
 
 <section id="projects">
 	<Section
 		align="top"
 		title="Projects"
-		description="I like to build some small projects when learning. Technologies are varied and so are their purposes. Most of them are open source!"
+		description="A project should be dynamic, creative and open source. That is why ZeroBytes."
 	>
 		<OneByOneGrid>
 			<ProjectsGrid>
 				<Card>
 					<div slot="image">
-						<Image path="projects" filename="personal-website" alt="Personal Website" />
+						<Image path="projects" filename="denmune" alt="DenMune Clustering Algorithm" />
 					</div>
 					<div slot="content">
 						<div class="title">
-							Personal Website
+							DenMune Clustering Algorithm
 							<div class="links">
 								<a
 									class="text-secondary"
-									href="https://github.com/matfantinel/matfantinel.github.io"
+									href="https://github.com/egy1st/denmune-clustering-algorithm"
 									target="_blank"
 									rel="noopener"
 									title="Open project on GitHub"
@@ -39,11 +41,11 @@
 							</div>
 						</div>
 						<div class="text">
-							The website you’re seeing right now. Designed to be pretty, simple, and lightweight.
+							DenMune a clustering algorithm that can find clusters of arbitrary size, shapes and densities in two-dimensions. Higher dimensions are first reduced to 2-D using the t-sne. The algorithm relies on a single parameter K (the number of nearest neighbors). The results show the superiority of DenMune. Enjoy the simplicty but the power of DenMune.
 
 							<a
 								class="project-post-button button secondary-light transparent"
-								href="/blog-development-sveltekit"
+								href="/denmune-clustering-algorithm"
 							>
 								Read blog post
 							</a>
@@ -51,7 +53,9 @@
 					</div>
 					<div slot="footer">
 						<div class="tags">
-							<Tag>Svelte</Tag>
+							<Tag>Pattern Recognition</Tag>
+							<Tag>Dimentionality Reduction</Tag>
+							<Tag>Clustering</Tag>
 							<Tag color="secondary">Open Source</Tag>
 						</div>
 					</div>

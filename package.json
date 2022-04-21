@@ -33,6 +33,7 @@
   },
   "type": "module",
   "dependencies": {
+    "contentful": "^9.1.22",
     "dateformat": "^4.5.1"
   }
 }
