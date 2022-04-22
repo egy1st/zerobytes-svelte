@@ -9,7 +9,10 @@ tags: [Pattern-Recognition, Machine-Learning, Clustering, Dimensionality-Reducti
 <script>
   import CodeBlock from "$lib/components/blog/code-block.svelte";
   import Image from "$lib/components/base/image.svelte";
+  import MarkerHighlight from "$lib/components/style/marker-highlight.svelte";
+  import SparklingHighlight from "$lib/components/style/sparkling-highlight.svelte";
   import Callout from "$lib/components/base/callout.svelte";
+  import Github from "$lib/svg/socials/github.svelte";
 </script>
 
 
@@ -158,7 +161,9 @@ labels, validity = dm.fit_predict(show_analyzer=False, show_noise=True)
 
   ![t710](https://raw.githubusercontent.com/egy1st/images/main/clustering/t710.png)
 
-  ```python
+<CodeBlock lang="python">
+
+```python
 #=============================================
 # Second scenario: train data with labels 
 # ============================================
@@ -176,7 +181,8 @@ knn = 6 # k-nearest neighbor, the only parameter required by the algorithm
 
 dm = DenMune(train_data=X_train, train_truth= y_train, k_nearest=knn)
 labels, validity = dm.fit_predict(show_analyzer=False, show_noise=True)
-  ```
+```
+</CodeBlock>
 
   Datset groundtruth
 
@@ -187,7 +193,9 @@ labels, validity = dm.fit_predict(show_analyzer=False, show_noise=True)
   ![aggregation train](https://raw.githubusercontent.com/egy1st/images/main/clustering/aggregation_6.png)
 
 
-  ```python
+<CodeBlock lang="python">
+
+```python
 #=================================================================
 # Third scenario: train data with labels in addition to test data
 # ================================================================
@@ -210,7 +218,8 @@ dm = DenMune(train_data=X_train, train_truth= y_train,
              test_data= X_test, 
              k_nearest=knn)
 labels, validity = dm.fit_predict(show_analyzer=True, show_noise=True)
-  ```
+```
+</CodeBlock>
 
   dataset groundtruth
 
@@ -231,15 +240,17 @@ labels, validity = dm.fit_predict(show_analyzer=True, show_noise=True)
 
     1. Parameters used within the initialization of the DenMune class
 
-  ```python
+<CodeBlock lang="Function">
+
+```python
 def __init__ (self,
                   train_data=None, test_data=None,
                   train_truth=None, test_truth=None, 
                   file_2d =None, k_nearest=None, 
                   rgn_tsne=False, prop_step=0,
                   ):    
-  ```
-
+```
+</CodeBlock>
   - train_data:
 
     - data used for training the algorithm
@@ -285,6 +296,8 @@ def __init__ (self,
 
     2. Parameters used within the fit_predict function:
 
+<CodeBlock lang="function">
+
   ```python
  def fit_predict(self,
                     validate=True,
@@ -293,6 +306,7 @@ def __init__ (self,
                     show_analyzer=True
                     ):
   ```
+</CodeBlock>
 
   - validate:
     - validate data on/off according to five measures integrated with DenMune (Accuracy. F1-score, NMI index, AMI index, ARI index)
@@ -326,21 +340,21 @@ def __init__ (self,
   - It plots post-identified noise in light grey
 
   You can set show_noise parameter to False.
+  
 
+<CodeBlock lang="python">
 
-  ```python
+```python
 # let us show noise
 
 m = DenMune(train_data=X_train, k_nearest=knn)
 labels, validity = dm.fit_predict(show_noise=True)
-  ```
 
-  ```python
 # let us show clean data by removing noise
-
 m = DenMune(train_data=X_train, k_nearest=knn)
 labels, validity = dm.fit_predict(show_noise=False)
-  ```
+```
+</CodeBlock>
 
 | noisy data                                                   | clean data                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -413,7 +427,9 @@ labels, validity = dm.fit_predict(show_noise=False)
 
   one of the top performing feature in this algorithm is enabling you to watch how your clusters propagate to construct the final output clusters. just use the parameter 'prop_step' as in the following example:
 
-  ```python
+<CodeBlock lang="python">
+
+```python
 dataset = "t7.10k" #
 data_path = 'datasets/denmune/chameleon/' 
 
@@ -436,7 +452,8 @@ for snapshot in snapshots:
     clear_output(wait=True)
     dm = DenMune(train_data=X_train, k_nearest=knn, rgn_tsne=False, prop_step=snapshot)
     labels, validity = dm.fit_predict(show_analyzer=False, show_noise=False)  
-  ```
+```
+</CodeBlock>
 
   [![Propagation in DenMune](https://raw.githubusercontent.com/egy1st/denmune-clustering-algorithm/main/images/propagation.gif)]()
 
@@ -523,7 +540,9 @@ for snapshot in snapshots:
       January 2021
 
 
-  ```bib
+<CodeBlock lang="how to cite">
+
+```bib
 @article{ABBAS2021107589,
 title = {DenMune: Density peak based clustering using mutual nearest neighbors},
 journal = {Pattern Recognition},
@@ -537,7 +556,8 @@ author = {Mohamed Abbas and Adel El-Zoghabi and Amin Shoukry},
 keywords = {Clustering, Mutual neighbors, Dimensionality reduction, Arbitrary shapes, Pattern recognition, Nearest neighbors, Density peak},
 abstract = {Many clustering algorithms fail when clusters are of arbitrary shapes, of varying densities, or the data classes are unbalanced and close to each other, even in two dimensions. A novel clustering algorithm “DenMune” is presented to meet this challenge. It is based on identifying dense regions using mutual nearest neighborhoods of size K, where K is the only parameter required from the user, besides obeying the mutual nearest neighbor consistency principle. The algorithm is stable for a wide range of values of K. Moreover, it is able to automatically detect and remove noise from the clustering process as well as detecting the target clusters. It produces robust results on various low and high dimensional datasets relative to several known state of the art clustering algorithms.}
 }
-  ```
+```
+</CodeBlock>
 
   Licensing
   ------------
