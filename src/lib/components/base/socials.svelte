@@ -8,19 +8,16 @@
 </script>
 
 <div class="socials">
-  <a href="https://t.me/Matt_Fantinel" target="_blank" rel="noopener" title="Say Hi on Telegram">
-    <TelegramIcon />
-  </a>
-  <a href="https://twitter.com/Matt_Fantinel" target="_blank" rel="noopener" title="Say Hi on Twitter">
+  <a href="https://www.facebook.com/ZeroBytes.One" target="_blank" rel="noopener" title="Say Hi on Facebook">
     <TwitterIcon />
   </a>
-  <a href="https://github.com/MatFantinel" target="_blank" rel="noopener" title="See my GitHub profile">
+  <a href="https://github.com/egy1st" target="_blank" rel="noopener" title="See my GitHub profile">
     <GitHubIcon />
   </a>
-  <a href="https://www.linkedin.com/in/matheus-fantinel/" target="_blank" rel="noopener" title="Connect on LinkedIn">
+  <a href="https://www.linkedin.com/in/mohabbas/" target="_blank" rel="noopener" title="Connect on LinkedIn">
     <LinkedInIcon />
   </a>
-  <a href="mailto:matt@fantinel.dev" target="_blank" rel="noopener" title="Send an email to matt@fantinel.dev">
+  <a href="mailto:01@zerobytes.one" target="_blank" rel="noopener" title="Send an email to 01@zerobytes.one">
     <EmailIcon />
   </a>
   <a href="/rss.xml" target="_blank" rel="noopener" title="Subscribe to my RSS Feed">

@@ -9,12 +9,11 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			I'm a developer aiming to build things that
-			<SparklingHighlight>spark joy</SparklingHighlight>
+			I'm a developer who create little things that make difference
+			<SparklingHighlight>ZeroBytes</SparklingHighlight>
 		</h2>
 		<p>
-			I believe software should be great for everyone — those who write it and those who use it —
-			and that bringing joy to problem-solving is the key to that.
+			It is a long journey from initial-bit to eighth-bit. Watch me moving form 0 ==> 1
 		</p>
 	</div>
 	<div class="avatar">

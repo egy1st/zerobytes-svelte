@@ -5,11 +5,11 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">Hello, I'm Matt!</h1>
+	<h1 class="hello">Hello, I'm Mohamed Ali!</h1>
 	<p class="intro">
-    <span class="left">I build fun stuff on the web,</span>
-    <span class="right">and sometimes write about it.</span>
-  </p>
+    <span class="left">I build incremental zeros to allow you to reach A complete 0000 0001</span>
+    <span class="right">Thay is why ZeroBytes.</span>
+  </p>-
 	<div class="ctas">
 		<a id="projects-btn" href="#projects" class="button primary-light">
 			<ProjectsIcon />

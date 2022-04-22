@@ -12,10 +12,10 @@
   </div>
   <div class="content">
     <div class="copyright">
-      © {currentYear} Matheus Fantinel. Made in Brazil.
+      © {currentYear} Mohamed Ali. Invested in Egypt.
     </div>
     <div class="credits">
-      Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener">SvelteKit</a>. 
+      Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener">EGY1ST</a>. 
       Icons by <a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>.
     </div>
     <div class="socials">
