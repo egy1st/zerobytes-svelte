@@ -1,0 +1,4 @@
+
+
+
+node ./index.js --run --sourceFolder "../static/images" --targetFolder "../static/optimized-images" --inputFormats "jpg" --inputFormats "jpeg" --inputFormats "png" --outputFormats "webp" --outputFormats "avif" --outputFormats "png"

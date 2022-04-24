@@ -41,20 +41,19 @@
 							</div>
 						</div>
 						<div class="text">
-							DenMune a clustering algorithm that can find clusters of arbitrary size, shapes and densities in two-dimensions. Higher dimensions are first reduced to 2-D using the t-sne. The algorithm relies on a single parameter K (the number of nearest neighbors). The results show the superiority of DenMune. Enjoy the simplicty but the power of DenMune.
+							DenMune a clustering algorithm that can find clusters of arbitrary size, shapes and densities in 2-D.
 
 							<a
 								class="project-post-button button secondary-light transparent"
 								href="/denmune-clustering-algorithm"
 							>
-								Read blog post
+								Read project post
 							</a>
 						</div>
 					</div>
 					<div slot="footer">
 						<div class="tags">
 							<Tag>Pattern Recognition</Tag>
-							<Tag>Dimentionality Reduction</Tag>
 							<Tag>Clustering</Tag>
 							<Tag color="secondary">Open Source</Tag>
 						</div>
@@ -63,15 +62,15 @@
 
 				<Card>
 					<div slot="image">
-						<Image path="projects" filename="pocket-companion" alt="Pocket Companion" />
+						<Image path="projects" filename="number2words" alt="Number 2 Words" />
 					</div>
 					<div slot="content">
 						<div class="title">
-							Pocket Companion
+							Number 2 Words
 							<div class="links">
 								<a
 									class="text-secondary"
-									href="https://github.com/matfantinel/acnh-pocket-companion"
+									href="https://github.com/egy1st/Number2Words"
 									target="_blank"
 									rel="noopener"
 									title="Open project on GitHub"
@@ -81,7 +80,7 @@
 
 								<a
 									class="text-secondary"
-									href="https://pocketcompanion.fantinel.dev/"
+									href="/number2words"
 									target="_blank"
 									rel="noopener"
 									title="Open site"
@@ -91,21 +90,21 @@
 							</div>
 						</div>
 						<div class="text">
-							A companion app for Animal Crossing New Horizons. Manage your island, tasks and
-							Critterpedia with this handy web app.
+							Number2Words is an API that allows you to Convert any digits number to the equivalent words.
+							for example (8543.21 in digits) will be (eight thousand, five hundred and forty-three $ and twenty-one ¢ in words).
 
 							<a
 								class="project-post-button button secondary-light transparent"
-								href="/ionic-animal-crossing-companion"
+								href="/number2words"
 							>
-								Read blog post
+								Read project post
 							</a>
 						</div>
 					</div>
 					<div slot="footer">
 						<div class="tags">
-							<Tag>Angular</Tag>
-							<Tag>Ionic</Tag>
+							<Tag>PHP</Tag>
+							<Tag>API</Tag>
 							<Tag color="secondary">Open Source</Tag>
 						</div>
 					</div>
